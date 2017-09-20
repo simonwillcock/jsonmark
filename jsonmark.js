@@ -15,6 +15,7 @@ module.exports = {
           }
 
       rows.forEach(function(row) {
+        row = row.trim();
         if (IS_HEADER.test(row)) {
           // finish the previous headerObj
           if (headerObj)
